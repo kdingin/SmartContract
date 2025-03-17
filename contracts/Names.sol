@@ -23,7 +23,7 @@ contract Names is Ownable {
             if (
                 keccak256(abi.encodePacked((_name))) ==
                 keccak256(abi.encodePacked((names[i])))
-            ) return true;
+            ) return true; 
         }
         return false;
     }
